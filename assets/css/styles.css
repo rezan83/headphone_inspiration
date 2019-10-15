@@ -6,42 +6,61 @@ body{
 /* aside */
 
 aside{
+    position: fixed;
+    top: 15vh;
+    height: 70vh;
+
+    /* flexbox isn't required */
+
     /* display: flex;
     flex-direction: column;
     justify-content: space-between; */
-    position: fixed;
-    top: 20vh;
-    height: 70vh;
 }
 
-aside button{
-    position: relative;
-    background-color: black;
-    border: 0;
-    font-size: .7em;
-    transition: all .5s;
-}
 aside a{
     margin: 0;
-}
-aside button:focus{
-    color: white;
-    font-size: .9em;
+    text-decoration: none;
+    color: rgb(185, 184, 184);
+    font-size: .7em;
     outline:0;
-    left: 2vw;
 }
-figure{
+
+a input{
+    /* making input hidden and selectable */
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+
+}
+a label{
+    position: relative;
+    /* animation */
+    transition: all .5s;
+}
+
+label figure{
     display: inline-block;
 }
-aside button:focus figure{
+
+input:checked + label{
+    color: white;
+    font-size: 1.5em;
+    outline:0;
+    left: 2vw;
     transform: scale(2, 2);
     width: 1.1em;
+}
+
+input:checked + label figure{
+    transform: scale(2, 2);
 }
 /* vertical line */
 .vl {
     border-left: 2px solid gray;
     height: 10vh;
     margin: 0;
-    margin-left: 53px;
+    margin-left: 45px;
 }
 

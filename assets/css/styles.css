@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+/* aside */
+
+aside{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    position: fixed;
+    top: 20vh;
+    height: 70vh;
+}
+
+aside button{
+    position: relative;
+    background-color: black;
+    border: 0;
+    font-size: .7em;
+    transition: all .5s;
+}
+aside a{
+    margin: 0;
+}
+aside button:focus{
+    color: white;
+    font-size: .9em;
+    outline:0;
+    left: 2vw;
+}
+figure{
+    display: inline-block;
+}
+aside button:focus figure{
+    transform: scale(2, 2);
+    width: 1.1em;
+}
+/* vertical line */
+.vl {
+    border-left: 2px solid gray;
+    height: 10vh;
+    margin: 0;
+    margin-left: 53px;
+}
+

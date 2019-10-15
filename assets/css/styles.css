@@ -5,7 +5,7 @@ body{
 
 /* aside */
 
-aside{
+aside#side-nave{
     position: fixed;
     top: 15vh;
     height: 70vh;
@@ -17,15 +17,14 @@ aside{
     justify-content: space-between; */
 }
 
-aside a{
+#side-nave a{
     margin: 0;
     text-decoration: none;
     color: rgb(185, 184, 184);
     font-size: .7em;
-    outline:0;
 }
 
-a input{
+#side-nave input{
     /* making input hidden and selectable */
     opacity: 0;
     z-index: 1;
@@ -34,17 +33,17 @@ a input{
     height: 10vh;
 
 }
-a label{
+#side-nave label{
     position: relative;
     /* animation */
     transition: all .5s;
 }
 
-label figure{
+#side-nave figure{
     display: inline-block;
 }
 
-input:checked + label{
+#side-nave input:checked + label{
     color: white;
     font-size: 1.5em;
     outline:0;
@@ -53,11 +52,12 @@ input:checked + label{
     width: 1.1em;
 }
 
-input:checked + label figure{
+#side-nave input:checked + label figure{
     transform: scale(2, 2);
 }
 /* vertical line */
-.vl {
+#side-nave .vl {
+    position: relative;
     border-left: 2px solid gray;
     height: 10vh;
     margin: 0;

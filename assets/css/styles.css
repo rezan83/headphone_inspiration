@@ -3,7 +3,7 @@ body{
     color: white;
 }
 
-/* aside */
+/* aside nav****************/
 
 aside#side-nave{
     position: fixed;
@@ -25,8 +25,9 @@ aside#side-nave{
 }
 
 #side-nave input{
-    /* making input hidden and selectable */
+    /* making input hidden */
     opacity: 0;
+    /* making input selectable */
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -46,7 +47,6 @@ aside#side-nave{
 #side-nave input:checked + label{
     color: white;
     font-size: 1.5em;
-    outline:0;
     left: 2vw;
     transform: scale(2, 2);
     width: 1.1em;
@@ -56,11 +56,13 @@ aside#side-nave{
     transform: scale(2, 2);
 }
 /* vertical line */
-#side-nave .vl {
+#side-nave .vertical-line {
     position: relative;
     border-left: 2px solid gray;
     height: 10vh;
     margin: 0;
     margin-left: 45px;
 }
+
+/*************** end aside nav*/
 

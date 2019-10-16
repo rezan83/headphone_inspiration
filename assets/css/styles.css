@@ -13,6 +13,9 @@
 *{
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     margin-top: 20vh;
     font-family: 'Work Sans', sans-serif;

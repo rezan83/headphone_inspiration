@@ -1,10 +1,59 @@
-body{
-    background-color: black;
-    color: white;
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+:root {
+    --background-color-theme: #2e2e2e;
+    --color-nav: #fff;
+    --hover-color: #77c2ff;
+    --grey-color-theme: #000;
+    --golden-color: #867772;
+    --light-golden-color: rgb(234, 204, 194);
+    --transparent-color: rgba(253, 253, 253, 0);
 }
 
-/* aside nav****************/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-top: 20vh;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--background-color-theme);
+    color:var(--golden-color);
+}
 
+h2{
+    color: var(--light-golden-color);
+}
+
+section{
+     margin: 50px auto;
+}
+
+/* top nav ****************/
+nav{
+    background-color: var(--transparent-color);
+    color: var(--golden-color);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 0 2vw;
+    top: 0;
+}
+
+nav div{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    transition: all .5s;
+}
+nav a:hover h5{
+    color: var(--hover-color) ;
+}
+/***************** end top nav */
+
+/* aside nav****************/
 aside#side-nave{
     position: fixed;
     top: 15vh;
@@ -32,8 +81,8 @@ aside#side-nave{
     position: absolute;
     width: 100%;
     height: 10vh;
-
 }
+
 #side-nave label{
     position: relative;
     /* animation */
@@ -45,7 +94,14 @@ aside#side-nave{
 }
 
 #side-nave input:checked + label{
-    color: white;
+    color: var(--color-nav);
+    font-size: 1.5em;
+    left: 2vw;
+    transform: scale(2, 2);
+    width: 1.1em;
+}
+#side-nave input:hover + label{
+    color: var(--color-nav);
     font-size: 1.5em;
     left: 2vw;
     transform: scale(2, 2);
@@ -66,3 +122,92 @@ aside#side-nave{
 
 /*************** end aside nav*/
 
+/* about *******************/
+#about{
+    width: 90vw;
+    margin: 50px auto;
+}
+
+h2#hero-head{
+    margin-left: 30vw;
+}
+
+#hero-img{
+    margin: 10vh 0;
+    width: 100%;
+}
+
+.show{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin: 2vh auto;
+    justify-content: space-between;
+}
+
+.show img{
+    width: 40vw;
+}
+
+.show-article{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50vw;
+    justify-content: center;
+    padding: 0 5vw;
+}
+/******************* end about */
+
+/* lounger *******************/
+
+.max-width{
+    width: 100%;
+}
+
+.max-width img{
+    width: 50%;
+}
+.max-width .show-article{
+    width: 50%;
+}
+.max-width h2{
+    margin-bottom: 10vh;
+}
+.max-width p{
+    width: 80%;
+}
+/************* end lounger */
+
+/* inspiration *************/
+#inspiration{
+    width: 80%;
+}
+#hero-video video{
+    margin: 10vh 0;
+    width: 100%;
+}
+.description{
+    padding: 0;
+    margin: 5vh 0;
+}
+.show-button{
+    background-color: var(--transparent-color);
+    color: var(--golden-color);
+    border: .1em solid white;
+}
+/************* end inspiration */
+
+/* shop *************/
+#shop img{
+    width: 60%;
+}
+.beoplay{
+    align-items: center;
+    text-align: center;
+    width: 40%;
+}
+
+.beoplay img{
+    width: 50%;
+}
+/************* end shop */

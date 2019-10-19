@@ -59,14 +59,7 @@ nav a:hover h5{
 /* aside nav****************/
 aside#side-nave{
     position: fixed;
-    top: 15vh;
-    height: 70vh;
-
-    /* flexbox isn't required */
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+    top: 20vh;
 }
 
 #side-nave a{
@@ -74,49 +67,30 @@ aside#side-nave{
     text-decoration: none;
     color: rgb(185, 184, 184);
     font-size: .7em;
-}
-
-#side-nave input{
-    /* making input hidden */
-    opacity: 0;
-    /* making input selectable */
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 10vh;
-}
-
-#side-nave label{
+    display: block;
     position: relative;
-    /* animation */
-    transition: all .5s;
+    left: 4vw;
+    transition: all 1s;
+    
 }
-
-#side-nave figure{
-    display: inline-block;
-}
-
-#side-nave input:checked + label{
+#side-nave a:hover{
     color: var(--color-nav);
     font-size: 1.5em;
-    left: 2vw;
+    left: 8vw;
     transform: scale(2, 2);
-    width: 1.1em;
-}
-#side-nave input:hover + label{
-    color: var(--color-nav);
-    font-size: 1.5em;
-    left: 2vw;
-    transform: scale(2, 2);
-    width: 1.1em;
 }
 
-#side-nave input:checked + label figure{
+.selected{
+    color: var(--color-nav) !important;
+    font-size: 1.5em;
+    left: 8vw;
     transform: scale(2, 2);
 }
+
+
 /* vertical line */
 #side-nave .vertical-line {
-    position: relative;
+    /* position: relative; */
     border-left: 2px solid gray;
     height: 10vh;
     margin: 0;
